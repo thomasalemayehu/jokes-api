@@ -5,7 +5,7 @@ dotenv.config();
 require("express-async-errors");
 
 const app: Express = express();
-const port: string | undefined = process.env.APP_PORT;
+const port: string | undefined = process.env.PORT;
 
 if (!port) {
   throw new Error("No App Port set");
