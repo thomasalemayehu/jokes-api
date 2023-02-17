@@ -27,6 +27,6 @@ app.use(ErrorMiddleware);
 
 connectToDB().then(() => {
   app.listen(port, () => {
-    console.log(`⚡Sever is live @ http://localhost:${port}`);
+    console.log(`⚡Sever is live @ ${port}`);
   });
 });

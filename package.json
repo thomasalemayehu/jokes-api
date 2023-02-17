@@ -7,7 +7,7 @@
     "build": "npx tsc",
     "start:dev": "nodemon ./src/index.ts",
     "start:prod": "nodemon ./src/build/index.js",
-    "prod": "node ./src/build/index.js"
+    "prod": "npx tsc && node ./src/build/src/index.js"
   },
   "author": "Thomas Alemayehu",
   "license": "ISC",
